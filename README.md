@@ -13,11 +13,13 @@
 #### 如何使用
 在config.py中输入小组id，百度开发平台key等信息
 
-需在resources目录中添加自己的回复语料：
-* reply_keywords.txt: 有关键词的回复，格式为 关键词1/关键词2/关键词3:回复a/回复b/回复3
-* reply_random.txt: 没有设定关键词的回复
-* reply_positive.txt: 友善的回复
-* reply_emojis: 随机在回复前后添加emoji
+获取cookie：登陆豆瓣账号，打开www.douban.com，右键选择Inspect,选择Network，刷新网页。在Name中选择最上端的www.douban.com，在右侧Hearders中找到Request Hearders中的Cookie,复制‘Cookie: ’后的内容并粘贴到resources/cookies.txt中，不要带空格
+
+在resources目录中添加自己的回复语料：
+* reply_keywords.txt: 每行一个有关键词的回复，格式为 关键词1/关键词2/关键词3:回复a/回复b/回复3，每行一个
+* reply_random.txt: 没有设定关键词的回复，每行一个
+* reply_positive.txt: 友善的回复，每行一个
+* reply_emojis: 随机在回复前后添加emoji，用空格分隔
 
 可以使用青云客或图灵机器人自动生成回复。如果使用图灵机器人，需要注册并获取自己的API
 
